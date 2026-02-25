@@ -1,0 +1,137 @@
+/* Variables */
+:root {
+    --warm-beige: rgb(243, 232, 221);
+    --dark-blue: rgb(2, 1, 18);
+    --red-transparent: rgba(141, 2, 46, 1);
+    --text-dark: rgb(2, 1, 18);
+    --text-light: var(--warm-beige);
+    --text-accent: rgb(141, 2, 46);
+}
+
+/* General */
+body {
+    background-color: var(--warm-beige);
+    padding: 20px;
+}
+
+@media (max-width: 680px) {
+    body {
+        padding: 0;
+        margin: 0;
+        background-color: var(--warm-beige);
+    }
+}
+
+.container {
+    display: flex;
+}
+
+#main {
+    background-color: var(--warm-beige);
+    color: var(--text-dark);
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    max-width: 720px !important;
+    margin: 0 auto;
+    padding: 30px 40px;
+}
+
+#intro img {
+    display: block;
+    margin: 0 auto;
+    width: 75px;
+}
+
+#main h1 {
+    text-align: center;
+    font-style: italic;
+    margin: 0;
+    margin-top: 16px;
+    font-size: 3em;
+}
+
+#main #tagline {
+    text-align: center;
+    font-size: 1.3em;
+    margin: 16px 0;
+}
+
+#main hr {
+    border: none;
+    height: 1px;
+    background-color: transparent;
+    margin: 16px 0;
+}
+
+#main h2 {
+    font-size: 1.7em;
+    text-align: center;
+    font-style: italic;
+    margin: 16px 0;
+}
+
+#main #bio {
+    font-size: 1.05em;
+}
+
+a, .accent {
+    color: var(--text-accent);
+}
+
+a:hover {
+    opacity: 0.6;
+    transition: 0.2s;
+}
+
+::selection {
+    background-color: var(--red-transparent);
+    color: var(--text-light);
+}
+
+
+/* Works */
+#works .container {
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    flex-grow: 2;
+}
+
+#works .work {
+    flex-basis: 40%;
+    padding: 10px 0;
+}
+
+#works .work h3 {
+    margin: 0;
+}
+
+#works .work p {
+    margin: 0;
+    text-align: left;
+    margin-bottom: .5em;
+}
+
+#works .work a {
+    margin-right: 1em;
+}
+
+#works .featured {
+    background-color: var(--red-transparent);
+    color: var(--text-light) !important;
+}
+
+#works .featured a {
+    color: var(--text-light) !important;
+}
+
+#works .featured ::selection {
+    background-color: var(--dark-blue);
+    color: var(--text-light);
+}
+
+@media (max-width: 680px) {
+    #works .work {
+        flex-basis: 100%;
+        padding: 10px;
+    }
+}
