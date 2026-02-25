@@ -8,6 +8,9 @@
     --text-accent: rgb(141, 2, 46);
 }
 
+/* Font */
+@import url('https://fonts.cdnfonts.com/css/coelacanth');
+
 /* General */
 body {
     background-color: var(--warm-beige);
@@ -29,17 +32,18 @@ body {
 #main {
     background-color: var(--warm-beige);
     color: var(--text-dark);
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Coelacanth', serif;
     font-weight: 400;
     max-width: 720px !important;
     margin: 0 auto;
-    padding: 30px 40px;
+    padding: 150px 40px;
 }
 
 #intro img {
     display: block;
     margin: 0 auto;
-    width: 75px;
+    width: 80%;
+    max-width: 250px;
 }
 
 #main h1 {
